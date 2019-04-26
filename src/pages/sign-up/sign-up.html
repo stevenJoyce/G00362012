@@ -1,0 +1,19 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>sign-up</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label color="primary">Create a username: </ion-label>
+    <ion-input placeholder="username" [(ngModel)]="user"></ion-input>
+   </ion-item> 
+     <ion-item>
+      <ion-label color="primary">Enter a password:</ion-label>
+      <ion-input type="password" placeholder="password" [(ngModel)]= "pass"></ion-input>
+    </ion-item>
+  <br>
+  <button ion-button (click) = "Create()"> Create account </button>
+</ion-content>
