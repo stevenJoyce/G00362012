@@ -11,11 +11,10 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-list radio-group [(ngModel)] ="sports" [hidden] = "no1">
+  <ion-list radio-group [(ngModel)] ="sports">
     <ion-item> 
-      <ion-list-header>
         <ion-label> Do you like to more playing or watching Sports? </ion-label>
-      </ion-list-header>
+        <br>
       <ion-label> Playing </ion-label>
       <ion-radio value="Playing"></ion-radio>
     </ion-item>
@@ -24,11 +23,10 @@
       <ion-radio value="Watching"></ion-radio>
     </ion-item>
   </ion-list>
-  <ion-list radio-group [(ngModel)] ="sportlist" [hidden] = "no2">
+  <ion-list radio-group [(ngModel)] ="sportlist">
       <ion-item> 
-        <ion-list-header>
-          <ion-label> What is your favourite sport? </ion-label>
-        </ion-list-header>
+          <ion-label color="primary"> What is your favourite sport? </ion-label>
+          <br>
         <ion-label> Football </ion-label>
         <ion-radio value="Football"></ion-radio>
       </ion-item>
@@ -61,11 +59,10 @@
         <ion-radio value="Basketball"></ion-radio>
       </ion-item>
   </ion-list>
-  <ion-list radio-group [(ngModel)] ="cycle" [hidden] = "no3">
+  <ion-list radio-group [(ngModel)] ="cycle">
     <ion-item> 
-      <ion-list-header>
-        <ion-item> Do you like to go for bike rides? </ion-item>
-      </ion-list-header>
+        <ion-label> Do you like to go for bike rides? </ion-label>
+        <br>
       <ion-label> Yes </ion-label>
       <ion-radio value="Yes"></ion-radio>
     </ion-item>
@@ -74,11 +71,10 @@
       <ion-radio value="No"></ion-radio>
     </ion-item>
   </ion-list>
-    <ion-list radio-group [(ngModel)] ="Gym" [hidden] = "no4">
+    <ion-list radio-group [(ngModel)] ="Gym">
       <ion-item> 
-          <ion-list-header>
-              <ion-label> Do you like to go to the Gym? </ion-label>
-            </ion-list-header>
+        <ion-label> Do you like to go to the Gym? </ion-label>
+        <br>
         <ion-label> Yes </ion-label>
         <ion-radio value="Yes"></ion-radio>
       </ion-item>
@@ -87,11 +83,10 @@
         <ion-radio value="No"></ion-radio>
       </ion-item>
     </ion-list>
-    <ion-list radio-group [(ngModel)] ="cinema" [hidden] = "no5">
+    <ion-list radio-group [(ngModel)] ="cinema">
       <ion-item> 
-        <ion-list-header>
-          <ion-label> Do you like to go to the cinema? </ion-label>
-        </ion-list-header>
+          <ion-label> Do you like to go to the cinema?</ion-label>
+          <br>
         <ion-label> Yes </ion-label>
         <ion-radio value="Yes"></ion-radio>
       </ion-item>
@@ -100,12 +95,10 @@
         <ion-radio value="No"></ion-radio>
       </ion-item>
     </ion-list>
-    <ion-list radio-group [(ngModel)] ="beach" [hidden] = "no6">
+    <ion-list radio-group [(ngModel)] ="beach">
       <ion-item> 
-       <ion-list-header>
-         <ion-item> Do you like to go to the Beach? </ion-item>
-       </ion-list-header>
-
+         <ion-label> Do you like to go to the Beach? </ion-label>
+         <br>
         <ion-label> Yes </ion-label>
         <ion-radio value="Yes"></ion-radio>
       </ion-item>
@@ -114,13 +107,6 @@
         <ion-radio value="No"></ion-radio>
       </ion-item>
     </ion-list>
-
-    <button (click) = "q1()" ion-button round [hidden] = question1> Next </button>
-    <button (click) = "q2()" ion-button round [hidden] = question2> Next </button>
-    <button (click) = "q3()" ion-button round [hidden] = question3> Next </button>
-    <button (click) = "q4()" ion-button round [hidden] = question4> Next </button>
-    <button (click) = "q5()" ion-button round [hidden] = question5> Next </button>
-    <button (click) = "q6()" ion-button round [hidden] = question6> Next </button>
     <button (click) = "finish()" ion-button round [hidden] = last> Finish </button>
 
 </ion-content>

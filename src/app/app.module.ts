@@ -7,7 +7,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import{ IonicStorageModule } from '@ionic/storage';
-
+import{ GoogleMaps} from '@ionic-native/google-maps';
 @NgModule({
   declarations: [
     MyApp,
@@ -26,7 +26,8 @@ import{ IonicStorageModule } from '@ionic/storage';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    GoogleMaps
   ]
 })
 export class AppModule {}
